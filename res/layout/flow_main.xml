@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/mainmel"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/bg06"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:id="@+id/RelativeLayout01"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <TableLayout
+            android:id="@+id/TableLayout01"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/bg4"
+            android:padding="3dp"
+            android:stretchColumns="0" >
+
+            <TableRow>
+
+                <TextView
+                    android:layout_height="24dip"
+                    android:padding="3dip"
+                    android:text="本日流量"
+                    android:textColor="#fff" />
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_height="24dip"
+                    android:padding="3dip"
+                    android:text="本日已用3G流量："
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/Today_3G"
+                    android:layout_width="80dp"
+                    android:layout_height="24dip"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:textColor="#fff" 
+                    android:text="0MB"/>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_height="24dip"
+                    android:padding="3dip"
+                    android:text="本日已用WIFI流量："
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/Today_WIFI"
+                    android:layout_width="80dp"
+                    android:layout_height="24dip"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:textColor="#fff" 
+                    android:text="0MB"/>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/TableLayout02"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TableLayout01"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dip"
+            android:background="@drawable/bg4"
+            android:padding="3dp"
+            android:stretchColumns="0" >
+
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="本月流量"
+                    android:textColor="#fff" />
+            </TableRow>
+
+            <TableRow android:layout_marginTop="3dip" >
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="本月限制3G流量："
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/limit"
+                    android:layout_width="80dp"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:textColor="#fff" 
+                    android:text="30MB"/>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="本月已用3G流量："
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/Month_3G"
+                    android:layout_width="80dp"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:textColor="#fff" 
+                    android:text="0MB"/>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="本月剩余3G流量："
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/Remain"
+                    android:layout_width="80dp"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:textColor="#fff" 
+                    android:text="30MB"/>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:padding="3dip"
+                    android:text="本月已用WIFI流量："
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/Month_WIFI"
+                    android:layout_width="80dp"
+                    android:gravity="right"
+                    android:padding="3dip"
+                    android:textColor="#fff" 
+                    android:text="0MB"/>
+            </TableRow>
+
+            <TableRow>
+            </TableRow>
+        </TableLayout>
+
+        <TableLayout
+            android:id="@+id/TableLayout03"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/TableLayout02"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dip" >
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="80dip"
+                    android:text="上行速度："
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/upRate"
+                    android:layout_width="80dip"
+                    android:textColor="#fff" 
+                    android:text="0kb/s"/>
+
+                <TextView
+                    android:layout_width="80dip"
+                    android:text="下行速度："
+                    android:textColor="#fff" />
+
+                <TextView
+                    android:id="@+id/downRate"
+                    android:layout_width="80dip"
+                    android:textColor="#fff" 
+                    android:text="0kb/s"/>
+            </TableRow>
+        </TableLayout>
+    </RelativeLayout>
+
+</LinearLayout>

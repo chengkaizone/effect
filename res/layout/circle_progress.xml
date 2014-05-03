@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:roundProgress="http://schemas.android.com/apk/res/com.genius.progress"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/buttonAddMainPro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="增加主进度条" >
+        </Button>
+
+        <Button
+            android:id="@+id/buttonAddSubPro"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="增加子进度条" >
+        </Button>
+
+        <Button
+            android:id="@+id/buttonImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" 
+             android:text="重置进度"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ff0000"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <effect.cheng.widget.CircleProgress
+            android:id="@+id/roundBar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background1"/>
+
+        <effect.cheng.widget.CircleProgress
+            android:id="@+id/roundBar2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:background="@drawable/background3"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#00ff00"
+        android:gravity="center_horizontal|center_vertical"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/buttonStart"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:text="启动动画" >
+        </Button>
+
+        <effect.cheng.widget.CircleProgress
+            android:id="@+id/roundBar4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/background1"/>
+
+        <Button
+            android:id="@+id/buttonStop"
+            android:layout_width="100dip"
+            android:layout_height="wrap_content"
+            android:text="停止动画" >
+        </Button>
+    </LinearLayout>
+
+</LinearLayout>
